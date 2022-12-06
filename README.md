@@ -1,0 +1,1 @@
+echo "# infomedia-it-internship"
