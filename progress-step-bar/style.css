@@ -72,25 +72,62 @@ ul li .progress{
     background-color: rgba(68, 68, 68, 0.781);
     right: 30px;
 }
-.one::after, .top-one::after, .bottom-one::after{
+.one::after{
     width: 0;
     height: 0;
 }
-.top-one::before, .top-three::before{
-    content: " ";
-    position: absolute;
-    width: 5px;
-    height: 100px;
-    background-color: rgba(68, 68, 68, 0.781);
-    top: 30px;
+
+/* Upper Line Css */
+
+.three-top{
+    bottom: 105px;
+    right: 45px;
 }
-.bottom-one::before, .bottom-three::before{
+.three-top::after{
+    rotate: -45deg;
+    top: 65px;
+    right: 8px;
+}
+.four-top{
+    bottom: 105px;
+    right: 45px;
+}
+.five{
+    right: 90px;
+}
+.five::after{
+    rotate: 45deg;
+    bottom: 67px;
+    right: 5px;
+}
+.five::before{
     content: " ";
     position: absolute;
     width: 5px;
-    height: 100px;
+    height: 125px;
     background-color: rgba(68, 68, 68, 0.781);
-    bottom: 30px;
+    top: 8px;
+    right: 66px;
+    rotate: 45deg;
+}
+.six{
+    right: 90px;
+}
+
+/* Bottom Line Css */
+
+.three-bottom{
+    right: 45px;
+    bottom: 20px;
+}
+.three-bottom::after{
+    rotate: 45deg;
+    bottom: 67px;
+    right: 8px;
+}
+.four-bottom{
+    right: 45px;
+    bottom: 20px;
 }
 ul li .progress .uil{
     display: none;

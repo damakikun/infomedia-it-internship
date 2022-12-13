@@ -1,132 +1,96 @@
 const one = document.querySelector(".one");
 const two = document.querySelector(".two");
-const three = document.querySelector(".three");
-const four = document.querySelector(".four");
 const five = document.querySelector(".five");
+const six = document.querySelector(".six");
 
-const topOne = document.querySelector(".top-one");
-const topTwo = document.querySelector(".top-two");
-const topThree = document.querySelector(".top-three");
+const threeTop = document.querySelector(".three-top");
+const fourTop = document.querySelector(".four-top");
 
-const bottomOne = document.querySelector(".bottom-one");
-const bottomTwo = document.querySelector(".bottom-two");
-const bottomThree = document.querySelector(".bottom-three");
+const threeBottom = document.querySelector(".three-bottom");
+const fourBottom = document.querySelector(".four-bottom");
 
 one.onclick = function() {
     one.classList.add("active");
     two.classList.remove("active");
-    three.classList.remove("active");
-    four.classList.remove("active");
     five.classList.remove("active");
+    six.classList.remove("active");
 
-    topOne.classList.remove("active");
-    topTwo.classList.remove("active");
-    topThree.classList.remove("active");
+    threeTop.classList.remove("active");
+    fourTop.classList.remove("active");
 
-    bottomOne.classList.remove("active");
-    bottomTwo.classList.remove("active");
-    bottomThree.classList.remove("active");
+    threeBottom.classList.remove("active");
+    fourBottom.classList.remove("active");
 }
 
 two.onclick = function() {
     one.classList.add("active");
     two.classList.add("active");
-    three.classList.remove("active");
-    four.classList.remove("active");
     five.classList.remove("active");
+    six.classList.remove("active");
 
-    topOne.classList.remove("active");
-    topTwo.classList.remove("active");
-    topThree.classList.remove("active");
+    threeTop.classList.remove("active");
+    fourTop.classList.remove("active");
 
-    bottomOne.classList.remove("active");
-    bottomTwo.classList.remove("active");
-    bottomThree.classList.remove("active");
+    threeBottom.classList.remove("active");
+    fourBottom.classList.remove("active");
 }
-three.onclick = function() {
+threeTop.onclick = function() {
     one.classList.add("active");
     two.classList.add("active");
-    three.classList.add("active");
-    four.classList.remove("active");
     five.classList.remove("active");
+    six.classList.remove("active");
+
+    threeTop.classList.add("active");
+    fourTop.classList.remove("active");
 }
-four.onclick = function() {
+fourTop.onclick = function() {
     one.classList.add("active");
     two.classList.add("active");
-    three.classList.add("active");
-    four.classList.add("active");
     five.classList.remove("active");
+    six.classList.remove("active");
 
-    topOne.classList.add("active");
-    topTwo.classList.add("active");
-    topThree.classList.add("active");
+    threeTop.classList.add("active");
+    fourTop.classList.add("active");
+}
+threeBottom.onclick = function() {
+    one.classList.add("active");
+    two.classList.add("active");
+    five.classList.remove("active");
+    six.classList.remove("active");
 
-    bottomOne.classList.add("active");
-    bottomTwo.classList.add("active");
-    bottomThree.classList.add("active");
+    threeBottom.classList.add("active");
+    fourBottom.classList.remove("active");
+}
+fourBottom.onclick = function() {
+    one.classList.add("active");
+    two.classList.add("active");
+    five.classList.remove("active");
+    six.classList.remove("active");
+
+    threeBottom.classList.add("active");
+    fourBottom.classList.add("active");
 }
 five.onclick = function() {
     one.classList.add("active");
     two.classList.add("active");
-    three.classList.add("active");
-    four.classList.add("active");
     five.classList.add("active");
+    six.classList.remove("active");
 
-    topOne.classList.add("active");
-    topTwo.classList.add("active");
-    topThree.classList.add("active");
+    threeTop.classList.add("active");
+    fourTop.classList.add("active");
 
-    bottomOne.classList.add("active");
-    bottomTwo.classList.add("active");
-    bottomThree.classList.add("active");
+    threeBottom.classList.add("active");
+    fourBottom.classList.add("active");
 }
-topOne.onclick = function() {
+six.onclick = function() {
     one.classList.add("active");
     two.classList.add("active");
+    five.classList.add("active");
+    six.classList.add("active");
 
-    topOne.classList.add("active");
-    topTwo.classList.remove("active");
-    topThree.classList.remove("active");
-}
-topTwo.onclick = function() {
-    one.classList.add("active");
-    two.classList.add("active");
-    four.classList.remove("active");
+    threeTop.classList.add("active");
+    fourTop.classList.add("active");
 
-    topOne.classList.add("active");
-    topTwo.classList.add("active");
-    topThree.classList.remove("active");
-}
-topThree.onclick = function() {
-    one.classList.add("active");
-    two.classList.add("active");
-
-    topOne.classList.add("active");
-    topTwo.classList.add("active");
-    topThree.classList.add("active");
-}
-bottomOne.onclick = function() {
-    one.classList.add("active");
-    two.classList.add("active");
-
-    bottomOne.classList.add("active");
-    bottomTwo.classList.remove("active");
-    bottomThree.classList.remove("active");
-}
-bottomTwo.onclick = function() {
-    one.classList.add("active");
-    two.classList.add("active");
-    four.classList.remove("active");
-
-    bottomOne.classList.add("active");
-    bottomTwo.classList.add("active");
-    bottomThree.classList.remove("active");
-}
-bottomThree.onclick = function() {
-    one.classList.add("active");
-    two.classList.add("active");
-
-    bottomOne.classList.add("active");
-    bottomTwo.classList.add("active");
-    bottomThree.classList.add("active");
+    threeBottom.classList.add("active");
+    fourBottom.classList.add("active");
 }
